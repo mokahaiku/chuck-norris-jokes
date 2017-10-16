@@ -1,5 +1,10 @@
+@font-face {
+  font-family: TexasRanger;
+  src: url(./assets/texasranger.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: TexasRanger;
 }
