@@ -1,6 +1,9 @@
 // @flow
 
 import * as React from 'react';
+import Spinner from '../Spinner';
+import withData from '../withData';
+import { getChuckNorrisJoke } from '../../api';
 import './index.css';
 import chuck from '../../assets/chuck.png';
 
@@ -9,7 +12,7 @@ type Props = {
   handleUpdate: Function,
 }
 
-function App({ content, handleUpdate }: Props) {
+export function App({ content, handleUpdate }: Props) {
   return (
     <div className="App">
       <img className="App__logo" alt="Chuck Norris" src={chuck} />
@@ -21,4 +24,4 @@ function App({ content, handleUpdate }: Props) {
   );
 }
 
-export default App;
+export default withData(getChuckNorrisJoke)(App, Spinner);
