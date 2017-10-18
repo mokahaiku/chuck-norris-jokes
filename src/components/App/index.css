@@ -1,0 +1,30 @@
+.App {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 1rem;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.App__logo {
+  width: 50%;
+  max-width: 300px;
+}
+
+.App__content {
+  font-weight: normal;
+}
+
+.App__button {
+  border: 8px solid black;
+  background-color: transparent;
+  font-size: 22px;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+}
