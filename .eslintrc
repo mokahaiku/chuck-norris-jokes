@@ -4,7 +4,8 @@
   "plugins": ["react", "jsx-a11y", "import"],
   "rules": {
     "react/jsx-filename-extension": ["off", "never"],
-    "import/prefer-default-export": ["off", "never"]
+    "import/prefer-default-export": ["off", "never"],
+    "import/no-named-as-default": ["off", "never"]
   },
   "env": {
     "browser": true,
