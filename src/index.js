@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App';
+import Switch from './components/Switch';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-  <App content="Roundhouse kick!" handleUpdate={() => null} />,
+  <Switch />,
   document.getElementById('root'),
 );
 registerServiceWorker();
